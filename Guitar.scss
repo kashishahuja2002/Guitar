@@ -1,0 +1,143 @@
+body{
+    background-color: white;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+// variables
+$deep-blue:#032f3e;
+
+.nav-bar{
+    background-color: $deep-blue;
+    width: 100%;
+    ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        li{
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 7px;
+            a{
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                margin: 10px;;
+                &:hover{
+                    background: lighten($deep-blue, 7);
+                }
+            }
+        }
+    }
+}
+
+.lead-banner{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    img{
+        width: 100%;
+        height: 550px;
+    }
+    .title{
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 550px;
+        margin: 20px;
+        font-size: 80px;
+    }
+    .sub-title{
+        color: white;
+        position: absolute;
+        top: 235px;
+        left: 800px;
+        font-size: 40px;
+    }
+}
+
+.services{
+    text-align: center;
+    color: $deep-blue;
+    margin: 2% 0px;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li{
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+            img{
+                width: 60%;
+                margin: 10px 20%;
+            }
+            a{
+                text-decoration: none;
+                color: $deep-blue;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+    img{
+        width: 100%;
+        height: 600px;
+    }
+    h1{
+        position: relative;
+        top: -500px;
+        left: 50px;
+        font-size: 54px;
+        color: white;
+    }
+    ul{
+        list-style: none;
+        width: 47%;
+        li{
+            position: relative;
+            top: -450px;
+            left: 40px;
+            color: rgb(228, 225, 225);
+            padding: 10px;
+            margin: 10px;
+            font-size: 24px;
+        }
+    }
+}
+
+.success{
+    position: absolute;
+    top: 1550px;
+    text-align: center;
+    margin-top: 2%;;
+    h1{
+        color: $deep-blue;
+    }
+    ul{
+        margin:20px 0px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 101.2%;
+        // border-right: .1px solid red;
+        li{
+            width: 25%;
+            margin: 2% 0px;
+        }
+    }
+}
